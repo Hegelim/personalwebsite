@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+
+.grid-container {
+  /* border-radius: 5px; */
+  padding: 5px;
+  display: grid;
+  grid-gap: 5px;
+}
+
+.grid-child {
+  border-radius: 20px;
+  padding: 5px;
+}
+
+body {
+  color: white;
+  line-height: 2;
+  font-family: Garamond;
+  font-size: 16;
+  font-weight: 600;
+}
+
+.middle {
+  background-image: url("gradbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+.footer {
+  background-color: #1a3560;
+  font-size: 10px;
+  padding-bottom: 20px;
+}
+
+.copyright {
+  padding-left: 20px;
+}
+
+.image {
+  background-color: #1a3560;
+  height: 100px;
+  background-image: url("Berkeley-logo.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+#five {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+a {
+  text-decoration: none;
+  color: #1a3560;
+  font-weight: bolder;
+  display: inline-block;
+  padding: 5px;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:hover.links {
+  text-decoration: none;
+  background: white;
+  color: #1a3560;
+  border-radius: 5px;
+}
+
+
+a:hover.local {
+  text-decoration: none;
+  background: white;
+  color: #ED4E33;
+  border-radius: 5px;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #1a3560;
+}
+
+.grid-container {
+  background-color: rgba(255,255,255,0.5);
+}

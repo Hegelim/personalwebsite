@@ -7,7 +7,7 @@
 
 
 .grid-container {
-  border-radius: 20px;
+  /* border-radius: 5px; */
   padding: 5px;
   display: grid;
   grid-gap: 5px;
@@ -27,7 +27,7 @@ body {
 }
 
 .middle {
-  background-image: url("cosmos.jpg");
+  background-image: url("background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -64,7 +64,8 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #1a3560;
+  font-weight: bolder;
   display: inline-block;
   padding: 5px;
 }
@@ -73,22 +74,35 @@ a:active {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-  color: white;
+a:hover.links {
+  text-decoration: none;
+  background: white;
+  color: #1a3560;
+  border-radius: 5px;
+}
+
+
+a:hover.local {
+  text-decoration: none;
+  background: white;
+  color: #ED4E33;
   border-radius: 5px;
 }
 
 h2 {
   margin-top: 0px;
   margin-bottom: 0px;
-  color: #FDB515;
+  color: #1a3560;
+}
+
+.grid-container {
+  background-color: rgba(255,255,255,0.5);
 }
 
 .local {
   color: #ED4E33;
 }
 
-.local:hover {
+/* .local:hover {
   color: #ED4E33;
-}
+} */
