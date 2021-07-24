@@ -1,2 +1,3 @@
 # Personal-Website
-The one and only unique website for myself. 
+Welcome! 
+Checkout my personal website at: https://hegelim.github.io/personalwebsite/
