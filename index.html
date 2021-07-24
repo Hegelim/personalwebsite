@@ -1,18 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Jumbotron example · Bootstrap v5.0</title>
 
-    <title>Main Page</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/jumbotron/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="index.css" ref="stylesheet">
+
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
         -webkit-user-select: none;
         -moz-user-select: none;
-        -ms-user-select: none;
         user-select: none;
       }
 
@@ -22,167 +29,149 @@
         }
       }
     </style>
-    <!-- Custom styles for this template -->
-    <link href="columbia/album.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
 
-</head>
-<body>
-
-<header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    
+  </head>
+  <body>
+    
+<main>
+  <div class="container py-4">
+    <header class="pb-auto mb-3 border">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <ul class="navbar-nav mx-auto mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
             </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Course Planning
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
-                  <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
-                </svg>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="https://ssol.columbia.edu/">SSOL</a></li>
-                <li><a class="dropdown-item" href="https://cas.columbia.edu/cas/login?service=https://courseworks2.columbia.edu/login/cas">Canvas</a></li>
-                <li><a class="dropdown-item" href="http://www.columbia.edu/cu/bulletin/uwb/home.html">Class Directory</a></li>
-                <li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1tY1ytSYDoNQhhmdLT5JjRx21M_Dj8wsK_DbA2BQTrrw/edit#gid=910590808">Approved Electives</a></li>
-                <li><a class="dropdown-item" href="https://vergil.registrar.columbia.edu/">Vergil</a></li>
-              </ul>
-            </li>
-
             <li class="nav-item">
-              <a class="nav-link"
-                 href="https://mail.google.com/mail/u/1/#inbox">
-                LionMail
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
-                  <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+              <a class="nav-link" href="facebook.com/yewen.zhou.52">
+                Facebook
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
                 </svg>
               </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link"
-                 href="https://drive.google.com/drive/u/1/my-drive">
-                Google Drive
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                  <path d="M7.71 3.5L1.15 15l3.43 6l6.55-11.5M9.73 15L6.3 21h13.12l3.43-6m-.57-1L15.42 2H8.57l6.86 12h6.85z" fill="#626262"/>
+              <a class="nav-link" href="https://www.instagram.com/yewenzhou/">
+                Instagram
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
                 </svg>
               </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link"
-                 href="https://github.com/Hegelim">
+              <a class="nav-link" href="https://github.com/Hegelim/">
                 GitHub
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                 </svg>
               </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link"
-                 href="https://www.linkedin.com/in/yewen-zhou/">
+              <a class="nav-link" href="https://www.linkedin.com/in/yewen-zhou/">
                 LinkedIn
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
                   <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
                 </svg>
               </a>
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link"
-                 href="https://www.gradengineering.columbia.edu/student-life/new-students?https://cvn.columbia.edu/&gclid=Cj0KCQjw6NmHBhD2ARIsAI3hrM2qnZE3NMJo6Xzx0oS9r5avraLoY1iHNafEkLmB4Kz-EcB2cQ34DFQaAlgLEALw_wcB">
-                New student Checklist
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://pdl.engineering.columbia.edu/">
-                PDL
-              </a>
-            </li>
-
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                ISSO
+                Course Schedule
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                </svg>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="https://isso.columbia.edu/">ISSO Home Page</a></li>
-                <li><a class="dropdown-item" href="https://isso.columbia.edu/content/resources-new-students">New Student Resources</a></li>
-                <li><a class="dropdown-item" href="https://isso.columbia.edu/content/f-1-cpt-curricular-practical-training">F-1 CPT</a></li>
+                <li><a class="dropdown-item" href="columbia/columbia_fall2021.html">Columbia</a></li>
+                <li><a class="dropdown-item" href="berkeley/spYewen.html">Berkeley</a></li>
               </ul>
             </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Research
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="https://cu-dsi-scholars.github.io/DSI-scholars/">DSI Scholars</a></li>
-                <li><a class="dropdown-item" href="https://studentresearch.engineering.columbia.edu/content/current-research-opportunities">SEAS Research Opportunities</a></li>
-              </ul>
-            </li>
-
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-</header>
-
-
-<main>
-  <div class="container">
-    <div class="card mx-auto" style="width: 700px">
-      <div class="card-header text-center">
-        About me
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <img src="profile_picture.jpg" class="img-fluid img-thumbnail" alt="...">
-        </div>
-
-        <div class="col">
-          <div class="card-body-right">
-            <p>
+    <div class="p-5 mb-4 bg-light rounded-3 border">
+      <div class="container-fluid py-5">
+        <div class="row">
+          <div class="col text-center">
+            <img src="profile_picture.jpg" class="img-fluid img-thumbnail" style="width: 80%; height: auto" alt="...">
+          </div>
+          <div class="col">
+            <h2 class="fw-bold">About me</h2>
+            <p class="col-md-8">
               <br>
-              I am an enthusiastic student pursuing M.S. in Data Science at Columbia University in the city of New York with a
-              goal to become a well-rounded Data Scientist specialized in machine learning and artificial intelligence.
+              My name is Yewen Zhou and I am currently pursuing M.S. in Data Science at Columbia University in the city of New York. <br><br>
+
+              I am aspiring to become a well-rounded Data Scientist specialized in machine learning and artificial intelligence.
               <br><br> Previously, I obtained my B.A. in Data Science with a concentration in Business/Industrial Analytics at
               UC Berkeley. <br><br> I am a fan of Sir. Elton John, and I play his songs while I am free.
             </p>
-
-            
-
-
+            <br>
+            <a href="https://drive.google.com/file/d/10PQ30Zwaq3iwrAC-vLQWFYw9IrCtoqxt/view?usp=sharing" class="btn btn-outline-secondary">
+              Resume
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-pdf" viewBox="0 0 16 16">
+                <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"/>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="card-footer text-muted">
-        2 days ago
+    <div class="row align-items-md-stretch">
+      <div class="col">
+        <div class="card text-dark bg-light mb-3">
+          <div class="card-header">Blog Post</div>
+          <ul class="list-group list-group-flush">
+            <a href="https://cp101yewenzhou.wordpress.com/introduction-of-asian-hate-crime/" class="list-group-item list-group-item-action">
+              Anti-Asian Hate Crime</a>
+            <a href="https://cp101yewenzhou.wordpress.com/"
+               class="list-group-item list-group-item-action">
+              D.C. Workforce during Covid</a>
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-dark bg-light mb-3">
+          <div class="card-header">Open Source Contribution</div>
+          <ul class="list-group list-group-flush">
+            <a href="https://github.com/Hegelim/solveminmax"
+               class="list-group-item list-group-item-action">
+              The solveminmax Python Package
+            </a>
+            <a href="https://github.com/Hegelim/realtimebidding"
+               class="list-group-item list-group-item-action">
+              Real-time bidding</a>
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-dark bg-light mb-3">
+          <div class="card-header">Work Sample</div>
+          <ul class="list-group list-group-flush">
+            <a href="https://drive.google.com/file/d/1nGRAs0-nmrP4LU6feD0yNsyiCc6VmH_f/view?usp=sharing"
+               class="list-group-item list-group-item-action">
+              Stat 153 Time Series Prediction in R</a>
+            <a href="https://drive.google.com/file/d/1zvA1tdVacIhrKvWU0do-muNz3EVrjxm9/view?usp=sharing"
+               class="list-group-item list-group-item-action">
+              Community Profile of Alameda County, CA</a>
+          </ul>
+        </div>
       </div>
     </div>
+
+    <footer class="pt-3 mt-4 text-muted border-top">
+      &copy; Yewen 2021
+    </footer>
   </div>
 </main>
-
-<footer class="text-muted">
-  <div class="container">
-    <p class="float-end">
-      <a href="#">Back to top</a>
-    </p>
-    <p>Copyright &copy; Yewen 2021</p>
-  </div>
-</footer>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
