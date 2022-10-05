@@ -36,32 +36,13 @@
 <!--Here begins the fixed nav bar-->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark border-bottom border-light border-3">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Fixed navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav me-auto mb-2 mb-md-0">
-        <li class="nav-item">
+      <div class="navbar-nav mb-2 mb-md-0">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-
-        <li class="nav-item">
           <a class="nav-link" href="research.html">Research</a>
-        </li>
-
-        <li class="nav-item">
           <a class="nav-link" href="tutoring.html">Tutoring</a>
-        </li>
-
-        <li class="nav-item">
           <a class="nav-link" href="extracurricular.html">Extracurricular</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      </div>
     </div>
   </div>
 </nav>
@@ -136,7 +117,7 @@
                 <th scope="row">Programming</th>
                 <td>
                   <span>
-                    Python, Linux, SQL, R, Java, HTML5, CSS, JavaScript
+                    Python, Linux, SQL, R, Java, HTML5, CSS, JavaScript, C++
                   </span>
                 </td>
               </tr>
@@ -379,9 +360,9 @@
             </ul>
           </p>
 
-          <a href="https://github.com/Hegelim/twitterweather" class="btn btn-primary" target="_blank">Repo</a>
+          <a href="https://github.com/Hegelim/twitterweather" class="btn btn-outline-secondary" target="_blank">Repo</a>
           
-          <a href="https://www.graphen.ai/course/bigdata/reports/202112-49.pdf" class="btn btn-primary" target="_blank">Report</a>
+          <a href="https://www.graphen.ai/course/bigdata/reports/202112-49.pdf" class="btn btn-outline-secondary" target="_blank">Report</a>
           
         </div>
       </div>
@@ -414,9 +395,43 @@
             </ul>
           </p>
 
-          <a href="https://github.com/Hegelim/stockpriceanalysis" class="btn btn-primary" target="_blank">Repo</a>
+          <a href="https://github.com/Hegelim/stockpriceanalysis" class="btn btn-outline-secondary" target="_blank">Repo</a>
         </div>
       </div>
+
+
+      <!--gomoku game-->
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex">
+            <div class="me-auto">  
+              <h5 class="card-title">
+                Gomoku Game
+                <span class="badge rounded-pill bg-secondary">Open Source</span>
+              </h5>
+            </div>
+            <div>
+              <h5 class="card-title">
+                Sep 2021 - Oct 2021
+              </h5>
+            </div>
+          </div>
+          
+          <p class="card-text">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                Implemented a gomoku game based on Django framework using HTML/CSS/JavaScript   
+              </li>
+              <li class="list-group-item">
+                Increased user-experience by supporting backup, clearing, and 
+              </li>
+            </ul>
+          </p>
+
+          <a href="https://github.com/Hegelim/gomoku" class="btn btn-outline-secondary" target="_blank">Repo</a>
+        </div>
+      </div>
+
 
       <!--solveminmax-->
       <div class="card">
@@ -449,9 +464,9 @@
             </ul>
           </p>
 
-          <a href="https://github.com/Hegelim/solveminmax" class="btn btn-primary" target="_blank">Repo</a>
+          <a href="https://github.com/Hegelim/solveminmax" class="btn btn-outline-secondary" target="_blank">Repo</a>
           
-          <a href="https://pypi.org/project/solveminmax/" class="btn btn-primary" target="_blank">PyPI</a>
+          <a href="https://pypi.org/project/solveminmax/" class="btn btn-outline-secondary" target="_blank">PyPI</a>
           
         </div>
       </div>
@@ -485,10 +500,10 @@
           </p>
 
           <a href="https://drive.google.com/file/d/1nGRAs0-nmrP4LU6feD0yNsyiCc6VmH_f/view?usp=sharing" 
-          class="btn btn-primary" target="_blank">Repo</a>
+          class="btn btn-outline-secondary" target="_blank">Repo</a>
         
           <a href="https://drive.google.com/file/d/1nGRAs0-nmrP4LU6feD0yNsyiCc6VmH_f/view?usp=sharing" 
-          class="btn btn-primary" target="_blank">Report</a>
+          class="btn btn-outline-secondary" target="_blank">Report</a>
 
         </div>
       </div>
@@ -523,10 +538,10 @@
           </p>
 
           <a href="https://drive.google.com/drive/folders/1y3DEO-byfkd7Q1Oz8HTQJfbEhT2FJPvX?usp=sharing" 
-          class="btn btn-primary" target="_blank">Repo</a>
+          class="btn btn-outline-secondary" target="_blank">Repo</a>
           
           <a href="https://drive.google.com/file/d/1ctfJd9__zeFAlLDNZA_M1f4kqXyGA_VY/view?usp=sharing" 
-          class="btn btn-primary" target="_blank">Report</a>
+          class="btn btn-outline-secondary" target="_blank">Report</a>
 
         </div>
       </div>
@@ -561,7 +576,7 @@
           </p>
 
           <a href="https://drive.google.com/drive/folders/1SFYr7dmSkKlCORpx5vyJt5XAAoODpZD2?usp=sharing" 
-          class="btn btn-primary" target="_blank">
+          class="btn btn-outline-secondary" target="_blank">
             Repo
           </a>
 
@@ -595,12 +610,12 @@
           </p>
 
           <a href="https://inst.eecs.berkeley.edu/~cs61b/sp20/materials/proj/proj3/index.html" 
-          class="btn btn-primary" target="_blank">
-            Introduction
+          class="btn btn-outline-secondary" target="_blank">
+            Website
           </a>
 
           <a href="https://drive.google.com/drive/folders/12QTz-fIb0aQBK0j50TK6lXRUMEnhpEWd?usp=sharing" 
-          class="btn btn-primary" target="_blank">
+          class="btn btn-outline-secondary" target="_blank">
             Repo
           </a>
 
@@ -638,8 +653,8 @@
             </ul>
           </p>
 
-          <a href="https://drive.google.com/drive/folders/1XOf39jkp59i_1KQEWhd8Jd95dmqOWbOr?usp=sharing" 
-          class="btn btn-primary" target="_blank">
+          <a href="https://drive.google.com/drive/folders/1QrjoAA3400RpjzqnkH4PdJqbXT_x5TVC?usp=sharing" 
+          class="btn btn-outline-secondary" target="_blank">
             Repo
           </a>
 
