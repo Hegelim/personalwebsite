@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Yewen's Homepage</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/jumbotron/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="index.css" ref="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+
+<body>
+
+<!--Here begins the fixed nav bar-->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark border-bottom border-light border-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Fixed navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="research.html">Research</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="tutoring.html">Tutoring</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="extracurricular.html">Extracurricular</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+    <div class="bg-light rounded py-5 p-5">
+
+        <div class="pt-5">
+
+          <!--SAFE Lab-->
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="me-auto">  
+                  <h5 class="card-title">
+                    SAFE Lab
+                    <span class="badge rounded-pill bg-secondary">Columbia University</span>
+                  </h5>
+                </div>
+                <div>
+                  <h5 class="card-title">
+                    New York, NY
+                  </h5>
+                </div>
+              </div>
+              
+              <div class="d-flex">
+                <div class="me-auto">
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    Data Scientist
+                  </h6>
+                </div>
+                <div>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    Oct 2021 - May 2022
+                  </h6>
+                </div>
+              </div>
+              
+              <p class="card-text">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    Matched 200 medical notes based on cosine similarities; trained logistic regression classifier on Bag of Words (BOW) and TF-IDF matrices 
+                    with hyper-parameter search (sklearn, google cloud platform), achieving cross-validation recall 0.99  
+                  </li>
+                  <li class="list-group-item">
+                    Combined 3 tables with more than 2,000 rows and grouped with datetime intervals for each medical record number (MRN), 
+                    allowing convenient table lookup for team members (pandas, numpy)  
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+    
+          <!--Goodly Labs-->
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="me-auto">  
+                  <h5 class="card-title">
+                    Goodly Labs
+                  </h5>
+                </div>
+                <div>
+                  <h5 class="card-title">
+                    Berkeley, CA
+                  </h5>
+                </div>
+              </div>
+              
+              <div class="d-flex">
+                <div class="me-auto">
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    Undergraduate Research Assistant
+                  </h6>
+                </div>
+                <div>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    Sep 2020 - May 2021
+                  </h6>
+                </div>
+              </div>
+              
+              <p class="card-text">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    Led a team of 3 undergraduate students supporting validation application of the Public Editor system; launched a program based on Krippendorff's Alpha utilizing pandas, 
+                    numpy, providing insights into level of agreement among more than 1,000 users
+                  </li>
+                  <li class="list-group-item">
+                    Communicated with the CEO of the organization weekly to ensure maximum efficiency of team's progress  
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+    
+
+        </div>
+
+        <!--Footer-->
+        <div class="container">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+              <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Yewen Zhou</span>
+            </div>
+          </footer>
+        </div>
+
+    </div>
+</main>
